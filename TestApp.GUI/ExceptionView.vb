@@ -9,6 +9,8 @@
 
     Public Sub Report(ByVal ex As System.Exception, ByVal level As Core.BugTracker.Level) Implements Core.IExceptionHandler.Report
 
+        Debug.WriteLine(String.Format("Reporting from {0} [{1}]", Me.GetType().Name, level))
+
         Me.Text = ex.Message
         lblMessage.Text = ex.ToString()
 

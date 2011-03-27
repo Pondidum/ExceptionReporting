@@ -66,8 +66,13 @@
   <ItemGroup>
     <Compile Include="BugTracker.vb" />
     <Compile Include="BugTrackerImpl.vb" />
+    <Compile Include="CascadeBugTracker.vb" />
+    <Compile Include="CascadeBugTrackerImpl.vb" />
+    <Compile Include="ExceptionHandlers\DatabaseCascadeExceptionHandler.vb" />
     <Compile Include="ExceptionHandlers\DatabaseExceptionHandler.vb" />
+    <Compile Include="ExceptionHandlers\EmailCascadeExceptionHandler.vb" />
     <Compile Include="ExceptionHandlers\EmailExceptionHandler.vb" />
+    <Compile Include="ICascadeExceptionHandler.vb" />
     <Compile Include="IExceptionHandler.vb" />
     <Compile Include="LazyBugTracker.vb" />
     <Compile Include="LazyBugTrackerImpl.vb" />

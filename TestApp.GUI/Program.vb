@@ -10,6 +10,9 @@ Public Module Program
         LazyBugTracker.AddHandler(Function() New ExceptionHandlers.EmailExceptionHandler())
         LazyBugTracker.AddHandler(Function() New ExceptionView())
 
+        CascadeBugTracker.SetHandler(New ExceptionOptionView(New ExceptionHandlers.EmailCascadeExceptionHandler(),
+                                                             New ExceptionHandlers.DatabaseCascadeExceptionHandler()))
+
         Application.Run(New MainView)
 
     End Sub

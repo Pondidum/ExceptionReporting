@@ -10,17 +10,7 @@ Namespace ExceptionHandlers
         End Property
 
         Public Sub Report(ByVal ex As System.Exception, ByVal level As BugTracker.Level) Implements IExceptionHandler.Report
-
-            Dim message = New Net.Mail.MailMessage()
-
-            message.To.Add("errors@example.com")
-            'message.Subject = ex.Message
-            message.Body = ex.ToString
-            'message.Attachments.Add(New Net.Mail.Attachment(ex.SerializeToXml())
-
-            Dim smpt = New Net.Mail.SmtpClient()
-            'smpt.Send(message)
-            
+            Debug.WriteLine(String.Format("Reporting from {0} [{1}]", Me.GetType().Name, level))
         End Sub
 
     End Class

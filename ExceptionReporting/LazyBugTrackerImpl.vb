@@ -1,5 +1,5 @@
 
-Public Class LazyBugTrackerImpl
+Friend Class LazyBugTrackerImpl
 
     Private ReadOnly _handlers As List(Of Func(Of IExceptionHandler))
 
