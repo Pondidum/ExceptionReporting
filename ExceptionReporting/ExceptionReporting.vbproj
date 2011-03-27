@@ -69,6 +69,8 @@
     <Compile Include="ExceptionHandlers\DatabaseExceptionHandler.vb" />
     <Compile Include="ExceptionHandlers\EmailExceptionHandler.vb" />
     <Compile Include="IExceptionHandler.vb" />
+    <Compile Include="LazyBugTracker.vb" />
+    <Compile Include="LazyBugTrackerImpl.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
