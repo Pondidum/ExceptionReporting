@@ -28,12 +28,12 @@ Partial Class MainView
         Me.grpBugTracker = New System.Windows.Forms.GroupBox()
         Me.grpLazyBugTracker = New System.Windows.Forms.GroupBox()
         Me.btnLazyBugTrackerSilent = New System.Windows.Forms.Button()
-        Me.btnLazyBugTrackerLoud = New System.Windows.Forms.Button()
         Me.btnLazyBugTrackerCustom = New System.Windows.Forms.Button()
+        Me.btnLazyBugTrackerLoud = New System.Windows.Forms.Button()
         Me.grpCascasedBugTracker = New System.Windows.Forms.GroupBox()
         Me.btnCascadedBugTrackerSilent = New System.Windows.Forms.Button()
-        Me.btnCascadedBugTrackerLoud = New System.Windows.Forms.Button()
         Me.btnCascadedBugTrackerCustom = New System.Windows.Forms.Button()
+        Me.btnCascadedBugTrackerLoud = New System.Windows.Forms.Button()
         Me.grpBugTracker.SuspendLayout()
         Me.grpLazyBugTracker.SuspendLayout()
         Me.grpCascasedBugTracker.SuspendLayout()
@@ -99,15 +99,6 @@ Partial Class MainView
         Me.btnLazyBugTrackerSilent.Text = "Silent Exception"
         Me.btnLazyBugTrackerSilent.UseVisualStyleBackColor = True
         '
-        'btnLazyBugTrackerLoud
-        '
-        Me.btnLazyBugTrackerLoud.Location = New System.Drawing.Point(6, 77)
-        Me.btnLazyBugTrackerLoud.Name = "btnLazyBugTrackerLoud"
-        Me.btnLazyBugTrackerLoud.Size = New System.Drawing.Size(140, 23)
-        Me.btnLazyBugTrackerLoud.TabIndex = 2
-        Me.btnLazyBugTrackerLoud.Text = "Loud Exception"
-        Me.btnLazyBugTrackerLoud.UseVisualStyleBackColor = True
-        '
         'btnLazyBugTrackerCustom
         '
         Me.btnLazyBugTrackerCustom.Location = New System.Drawing.Point(6, 48)
@@ -116,6 +107,15 @@ Partial Class MainView
         Me.btnLazyBugTrackerCustom.TabIndex = 1
         Me.btnLazyBugTrackerCustom.Text = "Custom Exception"
         Me.btnLazyBugTrackerCustom.UseVisualStyleBackColor = True
+        '
+        'btnLazyBugTrackerLoud
+        '
+        Me.btnLazyBugTrackerLoud.Location = New System.Drawing.Point(6, 77)
+        Me.btnLazyBugTrackerLoud.Name = "btnLazyBugTrackerLoud"
+        Me.btnLazyBugTrackerLoud.Size = New System.Drawing.Size(140, 23)
+        Me.btnLazyBugTrackerLoud.TabIndex = 2
+        Me.btnLazyBugTrackerLoud.Text = "Loud Exception"
+        Me.btnLazyBugTrackerLoud.UseVisualStyleBackColor = True
         '
         'grpCascasedBugTracker
         '
@@ -138,15 +138,6 @@ Partial Class MainView
         Me.btnCascadedBugTrackerSilent.Text = "Silent Exception"
         Me.btnCascadedBugTrackerSilent.UseVisualStyleBackColor = True
         '
-        'btnCascadedBugTrackerLoud
-        '
-        Me.btnCascadedBugTrackerLoud.Location = New System.Drawing.Point(6, 77)
-        Me.btnCascadedBugTrackerLoud.Name = "btnCascadedBugTrackerLoud"
-        Me.btnCascadedBugTrackerLoud.Size = New System.Drawing.Size(140, 23)
-        Me.btnCascadedBugTrackerLoud.TabIndex = 2
-        Me.btnCascadedBugTrackerLoud.Text = "Loud Exception"
-        Me.btnCascadedBugTrackerLoud.UseVisualStyleBackColor = True
-        '
         'btnCascadedBugTrackerCustom
         '
         Me.btnCascadedBugTrackerCustom.Location = New System.Drawing.Point(6, 48)
@@ -155,6 +146,15 @@ Partial Class MainView
         Me.btnCascadedBugTrackerCustom.TabIndex = 1
         Me.btnCascadedBugTrackerCustom.Text = "Custom Exception"
         Me.btnCascadedBugTrackerCustom.UseVisualStyleBackColor = True
+        '
+        'btnCascadedBugTrackerLoud
+        '
+        Me.btnCascadedBugTrackerLoud.Location = New System.Drawing.Point(6, 77)
+        Me.btnCascadedBugTrackerLoud.Name = "btnCascadedBugTrackerLoud"
+        Me.btnCascadedBugTrackerLoud.Size = New System.Drawing.Size(140, 23)
+        Me.btnCascadedBugTrackerLoud.TabIndex = 2
+        Me.btnCascadedBugTrackerLoud.Text = "Loud Exception"
+        Me.btnCascadedBugTrackerLoud.UseVisualStyleBackColor = True
         '
         'MainView
         '
