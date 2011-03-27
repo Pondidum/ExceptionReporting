@@ -23,9 +23,9 @@ Partial Class ExceptionView
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnOk = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pctIcon = New System.Windows.Forms.PictureBox()
         Me.lblMessage = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnOk
@@ -38,13 +38,15 @@ Partial Class ExceptionView
         Me.btnOk.Text = "Ok"
         Me.btnOk.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'pctIcon
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(48, 48)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
+        Me.pctIcon.Image = Global.TestApp.GUI.My.Resources.Resources.bug
+        Me.pctIcon.Location = New System.Drawing.Point(12, 12)
+        Me.pctIcon.Name = "pctIcon"
+        Me.pctIcon.Size = New System.Drawing.Size(48, 48)
+        Me.pctIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pctIcon.TabIndex = 1
+        Me.pctIcon.TabStop = False
         '
         'lblMessage
         '
@@ -64,7 +66,7 @@ Partial Class ExceptionView
         Me.ClientSize = New System.Drawing.Size(380, 122)
         Me.ControlBox = False
         Me.Controls.Add(Me.lblMessage)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.pctIcon)
         Me.Controls.Add(Me.btnOk)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
@@ -72,11 +74,11 @@ Partial Class ExceptionView
         Me.Name = "ExceptionView"
         Me.ShowInTaskbar = False
         Me.Text = "ExceptionView"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents btnOk As System.Windows.Forms.Button
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents pctIcon As System.Windows.Forms.PictureBox
     Friend WithEvents lblMessage As System.Windows.Forms.Label
 End Class

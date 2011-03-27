@@ -14,7 +14,7 @@ Namespace ExceptionHandlers
             Dim message = New Net.Mail.MailMessage()
 
             message.To.Add("errors@example.com")
-            message.Subject = ex.Message
+            'message.Subject = ex.Message
             message.Body = ex.ToString
             'message.Attachments.Add(New Net.Mail.Attachment(ex.SerializeToXml())
 
